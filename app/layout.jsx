@@ -3,12 +3,12 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import styles from '~/scss/_MainLayout.module.scss';
 
-const geistSans = Playfair_Display({
+const getPlayfairDisplay = Playfair_Display({
   // variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Rubik({
+const getRubik = Rubik({
   // variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -21,7 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} ${geistMono.className}`}>
+      {/* <body className={`${getPlayfairDisplay.className} ${getRubik.className}`}> */}
+      <body className={`${getPlayfairDisplay.className} `}>
         {children}
         <SpeedInsights />
       </body>

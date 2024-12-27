@@ -3,12 +3,12 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* :root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+} */
+/* @media (prefers-color-scheme: dark) {
+} */
 
 html,
 body {
@@ -35,8 +35,37 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+} */
+
+
+h1{
+  font-size: 72px;
+}
+h2{
+  font-size: 64px;
+}
+h3{
+  font-size: 54px;
+}
+h4{
+  font-size: 36px;
+}
+h5{
+  font-size: 28px;
+}
+
+p{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+@media screen and (max-width: 570px) {
+  h2{
+    font-size: 45px;
   }
 }

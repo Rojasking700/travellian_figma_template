@@ -2,7 +2,7 @@ import Image from 'next/image';
 import logo from '~/public/imgs/logos/Logo.png';
 import styles from '~/scss/nav/navbar.module.scss';
 import Link from 'next/link';
-import { Playfair_Display, Rubik  } from "next/font/google";
+import { Rubik  } from "next/font/google";
 
 const getRubik = Rubik({
   // variable: "--font-geist-mono",

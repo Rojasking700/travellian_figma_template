@@ -1,15 +1,24 @@
 import Image from 'next/image';
 import logo from '~/public/imgs/logos/Logo.png';
-import styles from '~/scss/LandingPage/hero.module.scss';
+import styles from '~/scss/nav/navbar.module.scss';
 import Link from 'next/link';
+import { Playfair_Display, Rubik  } from "next/font/google";
+
+const getRubik = Rubik({
+  // variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav className={`${styles.navbar} ${getRubik.className}`}>
       <div>
         <Image
           src={logo}
           alt='Background Element'
+          width={235}
+          height={45}
         />
       </div>
       <div>
@@ -21,9 +30,9 @@ export default function NavBar() {
           <li>Pricing</li>
         </ul>
       </div>
-      <div>
+      <div className={styles.navLogin}>
         <Link href={'#'}>Login</Link>
-        <Link  href={'#'}>Sign Up</Link>
+        <Link href={'#'} className={styles.signUp}>Sign Up</Link>
       </div>
     </nav>
   )

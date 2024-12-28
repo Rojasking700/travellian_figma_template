@@ -50,3 +50,26 @@
 .backgroundImg {
   z-index: 0;
 }
+
+
+.cardSection{
+  padding: 140px 182px;
+  
+  .cardSectionTop{
+    .cardSectionHeading{
+      h3{
+        font-weight: 100;
+      }
+      .cardSectionHeadingLine{
+        margin-top: 20px;
+        border: solid 2px $primary-color-1;
+        margin-bottom: 32px;
+        max-width: 250px;
+      }
+      
+      p{
+        color: $gray-font;
+      }
+    }
+  }
+}

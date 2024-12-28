@@ -10,8 +10,24 @@ export default function Hero() {
         <h1>Start your unforgettable journey with us.</h1>
         <p>The best travel for your jouney begins now</p>
       </div>
-      <div>
-        
+      <div className={styles.bookContainer}>
+        <div className={styles.bookOptions}>
+          <div>
+            <p>Destination</p>
+          </div>
+          <div>
+            <p>Person</p>
+          </div>
+          <div>
+            <p>Check in</p>
+          </div>
+          <div>
+            <p>Check out</p>
+          </div>
+        </div>
+        <div className={styles.bookNow}>
+          Book Now
+        </div>
       </div>
       <Image
         src={BackgrounElement}

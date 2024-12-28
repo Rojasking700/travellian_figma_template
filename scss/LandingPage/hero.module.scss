@@ -1,6 +1,75 @@
+@use '../variable.scss' as *;
+
+.hero {
+  .title {
+    position: absolute;
+    color: white;
+    // left: 182px;
+    top: 270px;
+    // width: 60%;
+
+    padding: 0px 182px;
+
+    h1 {
+      font-weight: 200;
+    }
+  }
+
+  .bookContainer {
+    position: absolute;
+    background-color: white;
+    top: 708px;
+    padding-left: 182px;
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 0px 10px 10px 0px;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    .bookOptions {
+      display: flex;
+      flex-flow: row nowrap;
+
+      gap: 32px;
+      padding: 60px 0px;
+      padding-right: 100px;
+    }
+
+    .bookNow {
+      padding: 60px 20px;
+      background-color: $primary-color-1;
+      /* top-left | top-right | bottom-right | bottom-left */
+      border-radius: 0px 10px 10px 0px;
+      color: white;
+      // font-size: 36px;
+      // max-width: 96px;
+    }
+  }
+}
 
 .backgroundImg {
-  position: absolute;
-  left: 0;
   z-index: 0;
+}
+
+
+.cardSection{
+  padding: 140px 182px;
+  
+  .cardSectionTop{
+    .cardSectionHeading{
+      h3{
+        font-weight: 100;
+      }
+      .cardSectionHeadingLine{
+        margin-top: 20px;
+        border: solid 2px $primary-color-1;
+        margin-bottom: 32px;
+        max-width: 250px;
+      }
+      
+      p{
+        color: $gray-font;
+      }
+    }
+  }
 }

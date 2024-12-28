@@ -1,0 +1,43 @@
+@use '../variable.scss' as *;
+
+.navbar {
+  position: absolute;
+  color: white;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  padding: 32px 182px;
+  // margin: 20px auto;
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    // align-items: flex-start;
+    gap: 32px;
+    list-style-type: none;
+
+    li {
+      font-weight: 200;
+    }
+
+    :first-child {
+      font-weight: 300;
+      text-decoration: underline 2px $primary-color-1;
+    }
+  }
+
+  .navLogin{
+    .signUp{
+      background-color: $primary-color-1;
+      border-radius: 10px;
+      padding: 20px 32px;
+      margin-left: 32px;
+    }
+  }
+}

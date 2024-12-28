@@ -11,8 +11,10 @@
   gap: 20px;
 
   width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+
   padding: 32px 182px;
-  // margin: 20px auto;
 
   ul {
     display: flex;

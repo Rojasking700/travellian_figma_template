@@ -53,9 +53,11 @@
 
 
 .cardSection{
-  padding: 140px 182px;
+  /* top | right | bottom | left */
+  padding: 140px 0 140px 182px;
   
   .cardSectionTop{
+    margin-bottom: 100px;
     .cardSectionHeading{
       h3{
         font-weight: 100;
@@ -69,6 +71,19 @@
       
       p{
         color: $gray-font;
+      }
+    }
+  }
+
+  .cardSectionBottom{
+    overflow-x: scroll;
+    .cardSectionCards{
+      display: flex;
+      gap: 32px;
+      min-width: 1800px;
+      // max-width: 1800px;
+      img{
+        max-width: 500px;
       }
     }
   }

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <body className={`${getPlayfairDisplay.className} ${getRubik.className}`}> */}
-      <body className={`${getPlayfairDisplay.className} `}>
+      <body className={`${getPlayfairDisplay.className} ${styles.layout_container}`}>
         <NavBar />
         {children}
         <SpeedInsights />

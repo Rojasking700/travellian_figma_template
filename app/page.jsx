@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Destinations from "~/components/LandingPage/Destinations";
+import Experiences from "~/components/LandingPage/Experiences";
 import Hero from "~/components/LandingPage/Hero";
 import Offer from "~/components/LandingPage/Offer";
 import OurBlog from "~/components/LandingPage/OurBlog";
@@ -17,6 +18,7 @@ export default function Home() {
         <OurBlog />
         <TripPlanner />
         <Destinations />
+        <Experiences />
       </main>
     </div>
   );

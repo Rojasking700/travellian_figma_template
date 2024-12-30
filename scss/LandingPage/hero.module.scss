@@ -182,3 +182,29 @@
 
   }
 }
+
+.cardSectionReviews{
+  display: flex;
+  gap: 32px;
+
+  .cardSectionReview{
+    min-width: 663px;
+    background-color: #F5F6F7;
+    padding: 60px 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    position: relative;
+
+
+    #cardName{
+      font-weight: 200;
+    }
+    
+    #avatar{
+      position: absolute;
+      left: 40;
+      top: -50;
+    }
+  }
+}

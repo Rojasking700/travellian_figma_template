@@ -52,54 +52,57 @@
 }
 
 
-.cardSection{
+.cardSection {
   /* top | right | bottom | left */
   // padding: 140px 0 140px 182px;
   padding: 140px 182px;
 
-  
-  .cardSectionTop{
+
+  .cardSectionTop {
     margin-bottom: 100px;
 
   }
 
-  .cardSectionBottom{
+  .cardSectionBottom {
+
     // overflow-x: scroll;
-    .cardSectionCards{
+    .cardSectionCards {
       display: flex;
       gap: 32px;
       // min-width: 1800px;
 
-      .cardSectionOffer{
+      .cardSectionOffer {
         max-width: 498px;
         background-color: #FFF8F1;
         border-radius: 26px;
-        .cardSectionOfferBottom{
+
+        .cardSectionOfferBottom {
           padding: 40px 24px;
           display: flex;
           flex-flow: column nowrap;
           gap: 24px;
 
-          #cardCity{
+          #cardCity {
             margin-bottom: 8px;
             font-weight: 300;
             color: $gray-font;
           }
-          .cardSectionOfferFooter{
+
+          .cardSectionOfferFooter {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
 
-            h4{
+            h4 {
               font-weight: 100;
             }
 
-            span{
+            span {
               color: $primary-color-1;
               font-weight: 400;
             }
-            
-            button{
+
+            button {
               padding: 20px 40px;
               font-size: 20px;
               color: white;
@@ -115,47 +118,67 @@
   }
 }
 
-.cardSectionHeading{
-  h3{
+.cardSectionHeading {
+  h3 {
     font-weight: 100;
   }
-  .cardSectionHeadingLine{
+
+  .cardSectionHeadingLine {
     margin-top: 20px;
     border: solid 2px $primary-color-1;
     margin-bottom: 32px;
     max-width: 250px;
   }
-  
-  p{
+
+  p {
     color: $gray-font;
   }
 }
 
 
-.blogSection{
+.blogSection {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 32px;
 
-  .blogSectionArticle{
+  .blogSectionArticle {
     max-width: 590px;
     display: flex;
     flex-flow: column nowrap;
     gap: 24px;
 
-    h3{
+    h3 {
       font-weight: 100;
       max-width: 420px;
     }
 
-    p{
+    p {
       line-height: 52px;
     }
 
-    a{
+    a {
       color: $primary-color-1;
     }
+  }
+}
+
+.tripPlanner {
+  padding: 140px 182px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 100px;
+  
+  .cardSectionHeading{
+    max-width: 340px;
+    min-width: 340px;
+  }
+
+  .tripPlannerTrips{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 32px;
+
   }
 }

@@ -1,0 +1,113 @@
+@use '../variable.scss' as *;
+
+.mainFooter {
+  padding: 240px 182px 140px;
+  background-color: $second-color-3;
+  color: white;
+
+  ul {
+    list-style-type: none;
+  }
+
+  .footerTop {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    // padding-bottom: 80px;
+    // margin-bottom: 20px;
+    gap: 10px;
+
+    // div {
+    //   flex-basis: 200px;
+    // }
+
+    .footerLogo {
+      img {
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 100px;
+        // line-height: 30px;
+      }
+    }
+
+    .linkDiv {
+      h5 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+
+      li {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+    }
+
+    .tryTodayFooter {
+      display: flex;
+      flex-flow: column nowrap;
+      // justify-content: flex-start;
+      align-items: flex-start;
+      gap: 23px;
+
+      button {
+        padding: 16px 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: $primary-color-2;
+        color: $second-color-2;
+        border: none;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: 80px 5%;
+
+    .footerTop {
+      div {
+        flex-basis: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $xl) {
+    padding: 20px 2%;
+
+    .footerTop {
+      padding-bottom: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 980px) {
+    padding: 20px 2%;
+
+    .footerTop {
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      gap: 30px;
+
+      div {
+        flex-basis: auto;
+        max-width: 528px;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 615px) {
+
+  }
+}

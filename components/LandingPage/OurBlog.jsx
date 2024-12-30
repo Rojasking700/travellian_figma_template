@@ -13,7 +13,7 @@ const getRubik = Rubik({
 });
 
 
-export default function Offer() {
+export default function OurBlog() {
 
   const offers = [
     {
@@ -40,46 +40,25 @@ export default function Offer() {
   ]
 
   return (
-    <div className={`${styles.cardSection}`}>
+    <div className={`${styles.cardSection} ${getRubik.className}`}>
       <div className={styles.cardSectionTop}>
         <div className={styles.cardSectionHeading}>
-          <h3>Special Offer</h3>
+          <h3>Our Blog</h3>
           <div className={styles.cardSectionHeadingLine}></div>
-          <p className={`${getRubik.className}`} >Check out our special offer and discounts.</p>
+          <p>An insight the incredible experience in the world</p>
         </div>
         <div>
 
         </div>
       </div>
-      <div className={styles.cardSectionBottom}>
-        <div className={styles.cardSectionCards}>
-          {
-            offers.map((offer) => (
-              <div key={offer.city} className={ `${styles.cardSectionOffer} ${getRubik.className}`} >
-                <Image
-                  src={offer.img}
-                  alt={offer.city}
-                />
-                <div className={styles.cardSectionOfferBottom}>
-                  <div>
-                    <h5 id={styles.cardCity} >{offer.city}</h5>
-                    <Image
-                      src={Rating}
-                      alt='Rating'
-                    />
-
-                  </div>
-                  <p>{offer.description}</p>
-                  <div className={styles.cardSectionOfferFooter}>
-                    <h4>From <span>${offer.price}</span> </h4>
-                    <button>DETAILS</button>
-                  </div>
-
-                </div>
-              </div>
-            ))
-          }
+      <div className={styles.blogSection}>
+        <div>
+          
         </div>
+        <div>
+
+        </div>
+
       </div>
     </div>
   )

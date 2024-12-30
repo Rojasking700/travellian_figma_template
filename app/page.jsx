@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Destinations from "~/components/LandingPage/Destinations";
 import Hero from "~/components/LandingPage/Hero";
 import Offer from "~/components/LandingPage/Offer";
 import OurBlog from "~/components/LandingPage/OurBlog";
@@ -15,6 +16,7 @@ export default function Home() {
         <Offer />
         <OurBlog />
         <TripPlanner />
+        <Destinations />
       </main>
     </div>
   );

@@ -3,7 +3,15 @@ import Image from 'next/image';
 import Lisbon from '~/public/imgs/LandingPage/offer/Lisbon.png';
 import Athens from '~/public/imgs/LandingPage/offer/Athens.png';
 import Rome from '~/public/imgs/LandingPage/offer/Rome.png';
+import Rating from '~/public/imgs/LandingPage/offer/Rating.png';
 import styles from '~/scss/LandingPage/hero.module.scss';
+import { Rubik  } from "next/font/google";
+
+const getRubik = Rubik({
+  // variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 
 export default function Offer() {
 
@@ -32,7 +40,7 @@ export default function Offer() {
   ]
 
   return (
-    <div className={styles.cardSection}>
+    <div className={`${styles.cardSection} ${getRubik.className}`}>
       <div className={styles.cardSectionTop}>
         <div className={styles.cardSectionHeading}>
           <h3>Special Offer</h3>
@@ -52,9 +60,22 @@ export default function Offer() {
                   src={offer.img}
                   alt={offer.city}
                 />
-                <h5>{offer.city}</h5>
-                <p>{offer.description}</p>
-                <h4>From ${offer.price} </h4>
+                <div className={styles.cardSectionOfferBottom}>
+                  <div>
+                    <h5 id={styles.cardCity} >{offer.city}</h5>
+                    <Image
+                      src={Rating}
+                      alt='Rating'
+                    />
+
+                  </div>
+                  <p>{offer.description}</p>
+                  <div className={styles.cardSectionOfferFooter}>
+                    <h4>From <span>${offer.price}</span> </h4>
+                    <button>DETAILS</button>
+                  </div>
+
+                </div>
               </div>
             ))
           }

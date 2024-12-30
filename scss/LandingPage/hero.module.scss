@@ -81,6 +81,48 @@
       display: flex;
       gap: 32px;
       min-width: 1800px;
+
+      .cardSectionOffer{
+        max-width: 498px;
+        background-color: #FFF8F1;
+        border-radius: 26px;
+        .cardSectionOfferBottom{
+          padding: 40px 24px;
+          display: flex;
+          flex-flow: column nowrap;
+          gap: 24px;
+
+          #cardCity{
+            margin-bottom: 8px;
+            font-weight: 300;
+            color: $gray-font;
+          }
+          .cardSectionOfferFooter{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            h4{
+              font-weight: 100;
+            }
+
+            span{
+              color: $primary-color-1;
+              font-weight: 400;
+            }
+            
+            button{
+              padding: 20px 40px;
+              font-size: 20px;
+              color: white;
+              border-radius: 10px;
+              border: none;
+              background-color: $primary-color-1;
+            }
+
+          }
+        }
+      }
     }
   }
 }

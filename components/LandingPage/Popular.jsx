@@ -36,9 +36,6 @@ export default function Popular() {
 
   useEffect(() => {
     if (!emblaApi) return
-
-    console.log(emblaApi.slideNodes()) // Access API
-
     onInit(emblaApi)
     onSelect(emblaApi)
     emblaApi.on('reInit', onInit).on('reInit', onSelect).on('select', onSelect)

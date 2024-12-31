@@ -19,6 +19,7 @@ export default function NavBar() {
           alt='Background Element'
           width={235}
           height={45}
+          priority={true}
         />
       </div>
       <div>

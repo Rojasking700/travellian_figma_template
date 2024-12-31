@@ -33,6 +33,7 @@ export default function Hero() {
         src={BackgrounElement}
         alt='Background Element'
         className={styles.backgroundImg}
+        priority={true}
       />
     </div>
   )

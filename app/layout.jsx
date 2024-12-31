@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import styles from '~/scss/_MainLayout.module.scss';
 import NavBar from "~/components/nav/navbrar";
 import MainFooter from "~/components/footer/footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const getPlayfairDisplay = Playfair_Display({
   // variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         {children}
         <MainFooter />
         <SpeedInsights />
+        <Analytics/>
       </body>
     </html>
   );

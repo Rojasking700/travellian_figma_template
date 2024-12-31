@@ -82,7 +82,6 @@ export default function Offer() {
                     <h4>From <span>${offer.price}</span> </h4>
                     <button>DETAILS</button>
                   </div>
-
                 </div>
               </div>
             ))

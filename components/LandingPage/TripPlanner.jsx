@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Colosseum from '~/public/imgs/LandingPage/TripPlanner/Colosseum.png';
-import EiffelTower from '~/public/imgs/LandingPage/TripPlanner/EiffelTower.png';
-import City from '~/public/imgs/LandingPage/TripPlanner/City.png';
-import Statue from '~/public/imgs/LandingPage/TripPlanner/Statue.png';
+import Colosseum from '~/public/imgs/LandingPage/tripPlanner/Colosseum.png';
+import EiffelTower from '~/public/imgs/LandingPage/tripPlanner/EiffelTower.png';
+import City from '~/public/imgs/LandingPage/tripPlanner/City.png';
+import Statue from '~/public/imgs/LandingPage/tripPlanner/Statue.png';
 import styles from '~/scss/LandingPage/hero.module.scss';
 import { Rubik } from "next/font/google";
 import Link from 'next/link';

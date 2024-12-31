@@ -59,7 +59,7 @@ export default function Offer() {
         </div>
       </div>
       <div className={`${styles.cardSectionBottom} ${styles.embla}`}>
-        <div className={`${styles.cardSectionCards} ${styles.embla__container} `}>
+        <div className={`${styles.cardSectionCards} `}>
           {
             offers.map((offer) => (
               <div key={offer.city} className={`${styles.cardSectionOffer} ${getRubik.className}`} >
@@ -88,7 +88,7 @@ export default function Offer() {
             ))
           }
         </div>
-                <UseDotButton emblaApi={emblaApi} />
+        <UseDotButton emblaApi={emblaApi} />
       </div>
     </div>
   )

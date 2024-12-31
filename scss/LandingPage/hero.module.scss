@@ -371,10 +371,13 @@
 
 .cardSectionReviews {
   display: flex;
-  gap: 32px;
+  // gap: 32px;
 
   .cardSectionReview {
-    min-width: 663px;
+    flex: 0 0 663px;
+    margin: 0px 15px;
+    height: auto;
+
     background-color: #F5F6F7;
     padding: 60px 40px;
     display: flex;
@@ -392,5 +395,11 @@
       left: 40;
       top: -50;
     }
+
+    @media screen and (max-width: $lg) {
+    flex: 0 0 350px;
+  
+    }
   }
+
 }

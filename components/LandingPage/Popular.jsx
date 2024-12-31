@@ -8,7 +8,6 @@ import Venice from '~/public/imgs/LandingPage/popular/Venice.png';
 import styles from '~/scss/LandingPage/hero.module.scss';
 import useEmblaCarousel from 'embla-carousel-react';
 import { usePrevNextButtons, UseDotButton } from '~/components/shared/embla/EmblaButtons';
-import emblaStyles from '~/scss/embla/embla.module.scss';
 
 export default function Popular() {
 

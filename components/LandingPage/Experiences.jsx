@@ -1,4 +1,4 @@
-
+'use client'
 import Image from 'next/image';
 import Doe from '~/public/imgs/LandingPage/experiences/Doe.png';
 import Smith from '~/public/imgs/LandingPage/experiences/Smith.png';
@@ -6,14 +6,18 @@ import Tamara from '~/public/imgs/LandingPage/experiences/Tamara.png';
 import Rating from '~/public/imgs/LandingPage/offer/Rating.png';
 import styles from '~/scss/LandingPage/hero.module.scss';
 import { Rubik } from "next/font/google";
+import useEmblaCarousel from 'embla-carousel-react';
+import { usePrevNextButtons, UseDotButton } from '~/components/shared/embla/EmblaButtons';
 
 const getRubik = Rubik({
   // variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
-
 export default function Experiences() {
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start', container: `.${styles.cardSectionReviews}`, })
+  const { PrevButton, NextButton, } = usePrevNextButtons(emblaApi);
 
   const reviews = [
     {
@@ -40,15 +44,16 @@ export default function Experiences() {
   ]
 
   return (
-    <div className={`${styles.cardSection}`}>
+    <div className={`${styles.cardSection} embla__viewport`} ref={emblaRef}>
       <div className={styles.cardSectionTop}>
         <div className={styles.cardSectionHeading}>
           <h3>Traveler's Experiences</h3>
           <div className={styles.cardSectionHeadingLine}></div>
           <p className={`${getRubik.className}`} >Here some awesome feedback from our travelers</p>
         </div>
-        <div>
-
+        <div className={styles.cardSectionTopButtons} >
+          <PrevButton />
+          <NextButton />
         </div>
       </div>
       <div className={styles.cardSectionBottom}>
@@ -74,6 +79,7 @@ export default function Experiences() {
             ))
           }
         </div>
+        <UseDotButton emblaApi={emblaApi} />
       </div>
     </div>
   )

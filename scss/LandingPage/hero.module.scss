@@ -250,9 +250,7 @@
 
   @media screen and (max-width: $lg) {
     flex-flow: column nowrap;
-    // justify-content: flex-start;
     align-items: flex-start;
-    // text-align: center;
   }
 
 }
@@ -272,8 +270,23 @@
     display: flex;
     flex-flow: row nowrap;
     gap: 32px;
-
   }
+  
+  @media screen and (max-width: $xxxl) {
+    padding: 140px 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: 140px 5%;
+  }
+
+
+  @media screen and (max-width: $lg) {
+    padding: 80px 5%;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
 }
 
 .cardSectionReviews {

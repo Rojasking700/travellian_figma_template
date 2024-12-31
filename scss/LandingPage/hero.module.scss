@@ -116,6 +116,20 @@
       }
     }
   }
+
+  @media screen and (max-width: $xxxl) {
+    padding: 140px 100px;
+  }
+
+  @media screen and (max-width: $xxl){
+    padding: 140px 5%;
+  }
+
+  
+  @media screen and (max-width: $lg) {
+    padding: 80px 5%;
+  }
+
 }
 
 .cardSectionHeading {
@@ -143,6 +157,15 @@
   align-items: center;
   gap: 32px;
 
+  div{
+    flex-basis: 50%;
+  }
+
+  #blogImage{
+    width: 100%;
+    height: auto;
+  }
+
   .blogSectionArticle {
     max-width: 590px;
     display: flex;
@@ -162,6 +185,15 @@
       color: $primary-color-1;
     }
   }
+
+  
+  @media screen and (max-width: $lg) {
+    flex-flow: column nowrap;
+    // justify-content: flex-start;
+    align-items: flex-start;
+    // text-align: center;
+  }
+
 }
 
 .tripPlanner {

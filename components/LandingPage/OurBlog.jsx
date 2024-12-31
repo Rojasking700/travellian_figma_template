@@ -31,6 +31,7 @@ export default function OurBlog() {
           <Image 
             src={BlogImage}
             alt='Blog Image'
+            id={styles.blogImage}
           />
         </div>
         <div className={styles.blogSectionArticle} >

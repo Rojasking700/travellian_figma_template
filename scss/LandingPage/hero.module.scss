@@ -13,12 +13,28 @@
     h1 {
       font-weight: 200;
     }
+
+    @media screen and (max-width: $xxxl) {
+      padding: 0px 100px;
+
+    }
+
+    @media screen and (max-width: $xxl) {
+      padding: 0px 5%;
+      top: 200px;
+    }
+
+
+    @media screen and (max-width: $lg) {
+      padding: 0px 5%;
+    }
+
   }
 
   .bookContainer {
     position: absolute;
     background-color: white;
-    top: 708px;
+    top: 700px;
     padding-left: 182px;
     /* top-left | top-right | bottom-right | bottom-left */
     border-radius: 0px 10px 10px 0px;
@@ -44,7 +60,52 @@
       // font-size: 36px;
       // max-width: 96px;
     }
+
+    
+    @media screen and (max-width: $xxxl) {
+      padding-left: 100px;
+
+    }
+
+    @media screen and (max-width: $xxl) {
+      padding-left: 5%;
+      .bookOptions {
+        padding-right: 50px;
+      }
+    }
+
+
+
+    @media screen and (max-width: $md) {
+      flex-flow: column nowrap;
+      padding-left: 0;
+      margin: 0 auto;
+      top: 650px;
+      left: 5%;
+      width: 90%;
+      border-radius: 10px;
+
+
+      .bookOptions {
+        display: flex;
+        flex-flow: column nowrap;
+        
+      padding: 30px 5%;
+      }
+
+      .bookNow {
+        padding: 40px 20px;
+        
+      /* top-left | top-right | bottom-right | bottom-left */
+        border-radius: 0px 0px 10px 10px;
+        color: white;
+      }
+    }
+
+
   }
+
+
 }
 
 .backgroundImg {
@@ -121,11 +182,11 @@
     padding: 140px 100px;
   }
 
-  @media screen and (max-width: $xxl){
+  @media screen and (max-width: $xxl) {
     padding: 140px 5%;
   }
 
-  
+
   @media screen and (max-width: $lg) {
     padding: 80px 5%;
   }
@@ -157,11 +218,11 @@
   align-items: center;
   gap: 32px;
 
-  div{
+  div {
     flex-basis: 50%;
   }
 
-  #blogImage{
+  #blogImage {
     width: 100%;
     height: auto;
   }
@@ -186,7 +247,7 @@
     }
   }
 
-  
+
   @media screen and (max-width: $lg) {
     flex-flow: column nowrap;
     // justify-content: flex-start;
@@ -201,13 +262,13 @@
   display: flex;
   flex-flow: row nowrap;
   gap: 100px;
-  
-  .cardSectionHeading{
+
+  .cardSectionHeading {
     max-width: 340px;
     min-width: 340px;
   }
 
-  .tripPlannerTrips{
+  .tripPlannerTrips {
     display: flex;
     flex-flow: row nowrap;
     gap: 32px;
@@ -215,11 +276,11 @@
   }
 }
 
-.cardSectionReviews{
+.cardSectionReviews {
   display: flex;
   gap: 32px;
 
-  .cardSectionReview{
+  .cardSectionReview {
     min-width: 663px;
     background-color: #F5F6F7;
     padding: 60px 40px;
@@ -229,11 +290,11 @@
     position: relative;
 
 
-    #cardName{
+    #cardName {
       font-weight: 200;
     }
-    
-    #avatar{
+
+    #avatar {
       position: absolute;
       left: 40;
       top: -50;

@@ -8,13 +8,11 @@ import styles from '~/scss/LandingPage/hero.module.scss';
 import { Rubik } from "next/font/google";
 import useEmblaCarousel from 'embla-carousel-react';
 import { usePrevNextButtons, UseDotButton } from '~/components/shared/embla/EmblaButtons';
-import emblaStyles from '~/scss/embla/embla.module.scss';
 
 const getRubik = Rubik({
   // variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export default function Offer() {
 

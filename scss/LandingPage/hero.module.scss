@@ -193,7 +193,7 @@
         }
       }
 
-      .cardSectionDestination{
+      .cardSectionDestination {
         flex: 0 0 365px;
         min-width: 0;
         margin: 0 20px;
@@ -254,14 +254,15 @@
           .cardSectionOfferBottom {
             padding: 20px 12px;
             gap: 12px;
-            
+
             .cardSectionOfferFooter {
               flex-flow: column nowrap;
               gap: 10px;
             }
           }
         }
-        .cardSectionDestination{
+
+        .cardSectionDestination {
           flex: 0 0 250px;
           margin: 0 10px;
           height: auto;
@@ -283,6 +284,7 @@
     border: solid 2px $primary-color-1;
     margin-bottom: 32px;
     max-width: 250px;
+    min-width: 250px;
   }
 
   p {
@@ -344,12 +346,35 @@
   .cardSectionHeading {
     max-width: 340px;
     min-width: 340px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    .cardSectionTopButtons {
+      margin: 20px 0px;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 20px;
+      
+    }
+  }
+
+  .embla {
+    overflow: hidden;
   }
 
   .tripPlannerTrips {
     display: flex;
-    flex-flow: row nowrap;
-    gap: 32px;
+    // flex-flow: row nowrap;
+    // gap: 32px;
+
+    .tripPlannerLoc {
+      flex: 0 0 300px;
+      margin: 0px 15px;
+      height: auto;
+
+    }
   }
 
   @media screen and (max-width: $xxxl) {
@@ -365,6 +390,12 @@
     padding: 80px 5%;
     flex-flow: column nowrap;
     align-items: flex-start;
+    gap: 50px;
+    
+  .embla {
+    width: 100%;
+  }
+
   }
 
 }
@@ -397,8 +428,8 @@
     }
 
     @media screen and (max-width: $lg) {
-    flex: 0 0 350px;
-  
+      flex: 0 0 350px;
+
     }
   }
 

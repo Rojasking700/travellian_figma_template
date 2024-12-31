@@ -44,7 +44,6 @@ export function UseDotButton({ emblaApi }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 
-
   const onDotButtonClick = useCallback(
     (index) => {
       if (!emblaApi) return

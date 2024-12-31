@@ -142,19 +142,29 @@
     // overflow-x: scroll;
     .cardSectionCards {
       display: flex;
-      gap: 32px;
+      // gap: 32px;
       // min-width: 1800px;
 
       .cardSectionOffer {
-        max-width: 498px;
+        flex: 0 0 498px;
+        min-width: 0;
+        height: auto;
+        // max-width: 498px;
         background-color: #FFF8F1;
         border-radius: 26px;
+        margin: 0px 15;
+
+        #cityImage {
+          max-width: 100%;
+          height: auto;
+        }
 
         .cardSectionOfferBottom {
           padding: 40px 24px;
           display: flex;
           flex-flow: column nowrap;
           gap: 24px;
+
 
           #cardCity {
             margin-bottom: 8px;
@@ -231,6 +241,24 @@
 
     .embla__slide {
       flex: 0 0 300px;
+    }
+
+    .cardSectionBottom {
+      .cardSectionCards {
+        .cardSectionOffer {
+          flex: 0 0 300px;
+
+          .cardSectionOfferBottom {
+            padding: 20px 12px;
+            gap: 12px;
+            
+            .cardSectionOfferFooter {
+              flex-flow: column nowrap;
+              gap: 10px;
+            }
+          }
+        }
+      }
     }
   }
 

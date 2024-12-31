@@ -1,11 +1,14 @@
-
+'use client'
 import Image from 'next/image';
 import Lisbon from '~/public/imgs/LandingPage/offer/Lisbon.png';
 import Athens from '~/public/imgs/LandingPage/offer/Athens.png';
 import Rome from '~/public/imgs/LandingPage/offer/Rome.png';
 import Rating from '~/public/imgs/LandingPage/offer/Rating.png';
 import styles from '~/scss/LandingPage/hero.module.scss';
-import { Rubik  } from "next/font/google";
+import { Rubik } from "next/font/google";
+import useEmblaCarousel from 'embla-carousel-react';
+import { usePrevNextButtons, UseDotButton } from '~/components/shared/embla/EmblaButtons';
+import emblaStyles from '~/scss/embla/embla.module.scss';
 
 const getRubik = Rubik({
   // variable: "--font-geist-mono",
@@ -14,6 +17,9 @@ const getRubik = Rubik({
 
 
 export default function Offer() {
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start', container: `.${styles.cardSectionCards}`, })
+  const { PrevButton, NextButton, } = usePrevNextButtons(emblaApi);
 
   const offers = [
     {
@@ -40,25 +46,27 @@ export default function Offer() {
   ]
 
   return (
-    <div className={`${styles.cardSection}`}>
+    <div className={`${styles.cardSection} embla__viewport`} ref={emblaRef}>
       <div className={styles.cardSectionTop}>
         <div className={styles.cardSectionHeading}>
           <h3>Special Offer</h3>
           <div className={styles.cardSectionHeadingLine}></div>
           <p className={`${getRubik.className}`} >Check out our special offer and discounts.</p>
         </div>
-        <div>
-
+        <div className={styles.cardSectionTopButtons} >
+          <PrevButton />
+          <NextButton />
         </div>
       </div>
-      <div className={styles.cardSectionBottom}>
-        <div className={styles.cardSectionCards}>
+      <div className={`${styles.cardSectionBottom} ${styles.embla}`}>
+        <div className={`${styles.cardSectionCards} ${styles.embla__container} `}>
           {
             offers.map((offer) => (
-              <div key={offer.city} className={ `${styles.cardSectionOffer} ${getRubik.className}`} >
+              <div key={offer.city} className={`${styles.cardSectionOffer} ${getRubik.className}`} >
                 <Image
                   src={offer.img}
                   alt={offer.city}
+                  id={styles.cityImage}
                 />
                 <div className={styles.cardSectionOfferBottom}>
                   <div>
@@ -80,6 +88,7 @@ export default function Offer() {
             ))
           }
         </div>
+                <UseDotButton emblaApi={emblaApi} />
       </div>
     </div>
   )

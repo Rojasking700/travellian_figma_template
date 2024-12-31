@@ -129,11 +129,11 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
-    .cardSectionTopButtons{
+
+    .cardSectionTopButtons {
       display: flex;
       flex-flow: row nowrap;
       gap: 40px;
-
     }
   }
 
@@ -202,34 +202,34 @@
   .embla__slide {
     flex: 0 0 450px;
     min-width: 0;
-    margin: 0 20px; 
+    margin: 0 20px;
     height: auto;
   }
 
-  .embla__prev{
+  .embla__prev {
     background-color: $second-color-3;
     padding: 20px 24px;
     border: none;
     border-radius: 10px;
-    cursor: pointer; 
+    cursor: pointer;
   }
 
-  .embla__next{
+  .embla__next {
     background-color: $primary-color-1;
     padding: 20px 24px;
     border: none;
     border-radius: 10px;
-    cursor: pointer; 
+    cursor: pointer;
   }
 
-  .embla__dots{
+  .embla__dots {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     gap: 10px;
     margin: 10px 0px;
 
-    .embla__dot{
+    .embla__dot {
       height: 20px;
       width: 20px;
       border-radius: 100%;
@@ -237,7 +237,7 @@
       border: 2px solid $second-color-3;
     }
 
-    .embla__dot_selected{
+    .embla__dot_selected {
       background-color: $primary-color-1;
     }
   }
@@ -255,11 +255,15 @@
   @media screen and (max-width: $lg) {
     padding: 80px 5%;
 
-    .cardSectionTop{
+    .cardSectionTop {
       flex-flow: column nowrap;
       align-items: flex-start;
       gap: 32px;
       margin-bottom: 50px;
+
+      .cardSectionTopButtons {
+        gap: 20px;
+      }
     }
 
     .embla__slide {
@@ -267,7 +271,7 @@
     }
   }
 
-  
+
 }
 
 .cardSectionHeading {
@@ -391,5 +395,3 @@
     }
   }
 }
-
-

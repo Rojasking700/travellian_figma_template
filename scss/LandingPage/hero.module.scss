@@ -203,7 +203,7 @@
     flex: 0 0 450px;
     min-width: 0;
     margin: 0 20px; 
-    // height: auto;
+    height: auto;
   }
 
   .embla__prev{
@@ -254,6 +254,17 @@
 
   @media screen and (max-width: $lg) {
     padding: 80px 5%;
+
+    .cardSectionTop{
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 50px;
+    }
+
+    .embla__slide {
+      flex: 0 0 300px;
+    }
   }
 
   

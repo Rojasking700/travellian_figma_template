@@ -42,4 +42,25 @@
       margin-left: 32px;
     }
   }
+  
+  #HumMenu{
+    display: none;
+  }
+  
+  @media screen and (max-width: $xxl) {
+    padding: 32px 5%;
+  }
+  @media screen and (max-width: 950px){
+
+    .navLinks{
+      display: none;
+    }
+    .navLogin{
+      display: none;
+    }
+
+    #HumMenu{
+      display: block;
+    }
+  }
 }

@@ -2,7 +2,8 @@ import Image from 'next/image';
 import logo from '~/public/imgs/logos/Logo.png';
 import styles from '~/scss/nav/navbar.module.scss';
 import Link from 'next/link';
-import { Rubik  } from "next/font/google";
+import { Rubik } from "next/font/google";
+import HumMenu from '~/public/icons/HumMenu.png';
 
 const getRubik = Rubik({
   // variable: "--font-geist-mono",
@@ -22,7 +23,7 @@ export default function NavBar() {
           priority={true}
         />
       </div>
-      <div>
+      <div  className={styles.navLinks}>
         <ul>
           <li>Home</li>
           <li>Explore</li>
@@ -35,6 +36,14 @@ export default function NavBar() {
         <Link href={'#'}>Login</Link>
         <Link href={'#'} className={styles.signUp}>Sign Up</Link>
       </div>
+
+      <Image
+        id={styles.HumMenu}
+        src={HumMenu}
+        alt="HumMenu"
+        width={29}
+        height={24}
+      />
     </nav>
   )
 

@@ -152,7 +152,7 @@
         // max-width: 498px;
         background-color: #FFF8F1;
         border-radius: 26px;
-        margin: 0px 15;
+        margin: 0px 15px;
 
         #cityImage {
           max-width: 100%;
@@ -247,6 +247,8 @@
       .cardSectionCards {
         .cardSectionOffer {
           flex: 0 0 300px;
+          margin: 0px 5px;
+          height: auto;
 
           .cardSectionOfferBottom {
             padding: 20px 12px;

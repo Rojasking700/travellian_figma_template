@@ -26,7 +26,10 @@
 
 
     @media screen and (max-width: $lg) {
-      padding: 0px 5%;
+      padding: 0;
+      width: 95%;
+      // margin: 0 auto;
+      left: 5%;
     }
 
   }
@@ -61,7 +64,7 @@
       // max-width: 96px;
     }
 
-    
+
     @media screen and (max-width: $xxxl) {
       padding-left: 100px;
 
@@ -69,6 +72,7 @@
 
     @media screen and (max-width: $xxl) {
       padding-left: 5%;
+
       .bookOptions {
         padding-right: 50px;
       }
@@ -79,7 +83,7 @@
     @media screen and (max-width: $md) {
       flex-flow: column nowrap;
       padding-left: 0;
-      margin: 0 auto;
+      // margin: 0 auto;
       top: 650px;
       left: 5%;
       width: 90%;
@@ -89,14 +93,14 @@
       .bookOptions {
         display: flex;
         flex-flow: column nowrap;
-        
-      padding: 30px 5%;
+
+        padding: 30px 5%;
       }
 
       .bookNow {
         padding: 40px 20px;
-        
-      /* top-left | top-right | bottom-right | bottom-left */
+
+        /* top-left | top-right | bottom-right | bottom-left */
         border-radius: 0px 0px 10px 10px;
         color: white;
       }
@@ -271,7 +275,7 @@
     flex-flow: row nowrap;
     gap: 32px;
   }
-  
+
   @media screen and (max-width: $xxxl) {
     padding: 140px 100px;
   }

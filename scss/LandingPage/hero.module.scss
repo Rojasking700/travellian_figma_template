@@ -138,18 +138,13 @@
   }
 
   .cardSectionBottom {
-
-    // overflow-x: scroll;
     .cardSectionCards {
       display: flex;
-      // gap: 32px;
-      // min-width: 1800px;
 
       .cardSectionOffer {
         flex: 0 0 480px;
         min-width: 0;
         height: auto;
-        // max-width: 498px;
         background-color: #FFF8F1;
         border-radius: 26px;
         margin: 0px 15px;
@@ -164,7 +159,6 @@
           display: flex;
           flex-flow: column nowrap;
           gap: 24px;
-
 
           #cardCity {
             margin-bottom: 8px;

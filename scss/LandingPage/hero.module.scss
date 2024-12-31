@@ -182,6 +182,19 @@
     }
   }
 
+  .embla {
+    // min-width: 1800px;
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 450px;
+    min-width: 0;
+    margin: 0 20px; 
+  }
+
   @media screen and (max-width: $xxxl) {
     padding: 140px 100px;
   }
@@ -195,6 +208,7 @@
     padding: 80px 5%;
   }
 
+  
 }
 
 .cardSectionHeading {
@@ -318,3 +332,5 @@
     }
   }
 }
+
+

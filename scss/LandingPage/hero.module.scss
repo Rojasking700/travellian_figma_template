@@ -44,6 +44,8 @@
 
     display: flex;
     flex-flow: row nowrap;
+    // justify-content: ;
+    // align-items: flex-start;
 
     .bookOptions {
       display: flex;
@@ -52,6 +54,17 @@
       gap: 32px;
       padding: 60px 0px;
       padding-right: 100px;
+
+      select {
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+      input {
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid black;
+      }
     }
 
     .bookNow {
@@ -60,9 +73,9 @@
       /* top-left | top-right | bottom-right | bottom-left */
       border-radius: 0px 10px 10px 0px;
       color: white;
-      // font-size: 36px;
-      // max-width: 96px;
+      align-content: center;
     }
+
 
 
     @media screen and (max-width: $xxxl) {
@@ -356,7 +369,7 @@
       display: flex;
       flex-flow: row nowrap;
       gap: 20px;
-      
+
     }
   }
 
@@ -391,10 +404,10 @@
     flex-flow: column nowrap;
     align-items: flex-start;
     gap: 50px;
-    
-  .embla {
-    width: 100%;
-  }
+
+    .embla {
+      width: 100%;
+    }
 
   }
 

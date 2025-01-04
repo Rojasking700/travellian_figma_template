@@ -17,9 +17,10 @@ export default function Hero() {
         <Form className={styles.bookContainer}>
           <div className={styles.bookOptions}>
             <div>
-              <p>Destination</p>
-              <select name="Destination" aria-labelledby="Choose destination" >
-                <option value="">Choose a Destination</option>
+              <label htmlFor="Choose_destination" >Destination</label>
+              <br />
+              <select name="Destination"  id="Choose_destination" >
+                <option value="Choose destination">Choose a Destination</option>
                 {
                   staticCities.map((city) => (
                     <option key={city.name} value={city.name}>{city.name}</option>
@@ -28,9 +29,10 @@ export default function Hero() {
               </select>
             </div>
             <div>
-              <p>People</p>
-              <select name="People" aria-labelledby="Choose number of people">
-                <option value="">Choose an option</option>
+              <label htmlFor="Choose_people" >People</label>
+              <br />
+              <select name="People" id="Choose_people">
+                <option value="Choose number of people">Choose an option</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
                 <option value={3}>3</option>
@@ -43,12 +45,14 @@ export default function Hero() {
               </select>
             </div>
             <div>
-              <p>Check in</p>
-              <input type="date" id="start" name="checkIn"  min="2025-01-01" aria-labelledby="Select Check In"/>
+              <label htmlFor="Check_In" >Check in</label>
+              <br />
+              <input type="date" id="Check_In" name="checkIn"  min="2025-01-01" />
             </div>
             <div>
-              <p>Check out</p>
-              <input type="date" id="end" name="checkOut"  min="2025-01-01" aria-labelledby="Select Check Out"/>
+              <label htmlFor="Check_Out" >Check out</label>
+              <br />
+              <input type="date" id="Check_Out" name="checkOut"  min="2025-01-01"/>
             </div>
           </div>
           <div className={styles.bookNow}>

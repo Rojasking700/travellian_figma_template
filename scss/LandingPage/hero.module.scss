@@ -431,15 +431,14 @@
     gap: 20px;
     position: relative;
 
-
     #cardName {
       font-weight: 200;
     }
 
     #avatar {
       position: absolute;
-      left: 40;
-      top: -50;
+      left: 40px;
+      top: -50px;
     }
 
     @media screen and (max-width: $lg) {

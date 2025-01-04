@@ -77,6 +77,7 @@ export function UseDotButton({ emblaApi }) {
           key={index}
           onClick={() => onDotButtonClick(index)}
           className={`${emblaStyles.embla__dot}  ${index === selectedIndex ? emblaStyles.embla__dot_selected : ''} `}
+          aria-label={`Carousel Item ${index}`}
         >
         </button>
       ))}

@@ -18,7 +18,7 @@ export default function Hero() {
           <div className={styles.bookOptions}>
             <div>
               <p>Destination</p>
-              <select name="Destination" >
+              <select name="Destination" aria-labelledby="Choose destination" >
                 <option value="">Choose a Destination</option>
                 {
                   staticCities.map((city) => (
@@ -29,7 +29,7 @@ export default function Hero() {
             </div>
             <div>
               <p>People</p>
-              <select name="People">
+              <select name="People" aria-labelledby="Choose number of people">
                 <option value="">Choose an option</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
@@ -44,11 +44,11 @@ export default function Hero() {
             </div>
             <div>
               <p>Check in</p>
-              <input type="date" id="start" name="checkIn"  min="2025-01-01" />
+              <input type="date" id="start" name="checkIn"  min="2025-01-01" aria-labelledby="Select Check In"/>
             </div>
             <div>
               <p>Check out</p>
-              <input type="date" id="end" name="checkOut"  min="2025-01-01"  />
+              <input type="date" id="end" name="checkOut"  min="2025-01-01" aria-labelledby="Select Check Out"/>
             </div>
           </div>
           <div className={styles.bookNow}>
